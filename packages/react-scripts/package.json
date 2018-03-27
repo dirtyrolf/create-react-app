@@ -10,12 +10,20 @@
   "bugs": {
     "url": "https://github.com/dirtyrolf/create-react-app/issues"
   },
-  "files": ["bin", "config", "scripts", "template", "utils"],
+  "files": [
+    "bin",
+    "config",
+    "scripts",
+    "template",
+    "utils"
+  ],
   "bin": {
     "react-scripts": "./bin/react-scripts.js"
   },
   "dependencies": {
     "@babel/core": "7.0.0-beta.42",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.42",
+    "@babel/plugin-proposal-decorators": "^7.0.0-beta.42",
     "@babel/runtime": "7.0.0-beta.42",
     "autoprefixer": "7.2.5",
     "babel-core": "7.0.0-bridge.0",
@@ -23,7 +31,6 @@
     "babel-jest": "22.1.0",
     "babel-loader": "8.0.0-beta.0",
     "babel-plugin-named-asset-import": "^0.1.0",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-react-app": "^3.1.1",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
     "chalk": "2.3.0",
@@ -75,6 +82,11 @@
       "last 2 firefox versions",
       "last 2 edge versions"
     ],
-    "production": [">1%", "last 4 versions", "Firefox ESR", "not ie < 11"]
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
   }
 }
