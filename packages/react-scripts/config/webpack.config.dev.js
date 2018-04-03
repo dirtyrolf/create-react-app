@@ -200,8 +200,14 @@ module.exports = {
                   // @remove-on-eject-begin
                   babelrc: false,
                   // @remove-on-eject-end
-                  presets: [require.resolve('babel-preset-react-app')],
+                  presets: [
+                    [
+                      require.resolve('babel-preset-react-app'),
+                      { flow: false },
+                    ],
+                  ],
                   plugins: [
+                    require.resolve('@babel/plugin-transform-typescript'),
                     require.resolve('@babel/plugin-proposal-decorators'),
                     [
                       require.resolve(
