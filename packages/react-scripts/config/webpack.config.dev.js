@@ -234,7 +234,10 @@ module.exports = {
                   ],
                   plugins: [
                     require.resolve('@babel/plugin-transform-typescript'),
-                    require.resolve('@babel/plugin-proposal-decorators'),
+                    [
+                      require.resolve('@babel/plugin-proposal-decorators'),
+                      { legacy: true },
+                    ],
                     [
                       require.resolve(
                         '@babel/plugin-proposal-class-properties'
